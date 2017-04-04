@@ -1,5 +1,14 @@
 # Chancletapp
 
+> Un proyecto de demostración usando Angular 2 (que en realidad es 4 pero bueno).
+>
+> _A demo project using Angular 2 (well 4 actually but people got used to the name)._
+
+
+
+## Readme de Angular CLI
+---
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
