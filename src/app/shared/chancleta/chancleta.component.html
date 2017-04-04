@@ -1,0 +1,17 @@
+<md-card>
+  <md-card-header>
+    <md-card-title>{{chancletaData?.name}}</md-card-title>
+    <md-card-subtitle>{{chancletaData?.price}}</md-card-subtitle>
+  </md-card-header>
+  <img md-card-image [src]="chancletaData?.pictureUrl || 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Sandal_3_(PSF).svg/2000px-Sandal_3_(PSF).svg.png'">
+  <md-card-content>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium delectus ipsa magni officia! Molestiae modi quis illo omnis maxime quae velit ducimus suscipit quos culpa nesciunt maiores odit voluptates, tempore!
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <a md-button [routerLink]="['']" *ngIf="detailsView">Volver</a>
+    <a md-button [routerLink]="['/chancleta', chancletaData?.id-1]" *ngIf="!detailsView">Ver</a>
+    <button md-button>Al carrito <md-icon>add_shopping_cart</md-icon></button>
+  </md-card-actions>
+</md-card>
