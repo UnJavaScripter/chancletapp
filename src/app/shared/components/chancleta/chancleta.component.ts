@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Chancleta } from '../chancleta.interface';
+import { Chancleta } from '../../chancleta.interface';
 
 @Component({
   selector: 'app-chancleta',
@@ -13,6 +13,10 @@ export class ChancletaComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  agregarAlCarrito() {
+    console.log('agregando');
   }
 
 }

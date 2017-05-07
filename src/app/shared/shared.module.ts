@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { ChancletaComponent } from './chancleta/chancleta.component';
+import { ChancletaComponent } from './components/chancleta/chancleta.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   imports: [
@@ -15,13 +16,15 @@ import { ChancletaComponent } from './chancleta/chancleta.component';
   providers: [
   ],
   declarations: [
-    ChancletaComponent
+    ChancletaComponent,
+    NavBarComponent
   ],
   exports: [
     MaterialModule,
     FlexLayoutModule,
 
-    ChancletaComponent
+    ChancletaComponent,
+    NavBarComponent
   ]
   
 })

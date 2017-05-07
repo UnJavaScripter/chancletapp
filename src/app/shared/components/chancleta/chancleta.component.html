@@ -12,6 +12,6 @@
   <md-card-actions>
     <a md-button [routerLink]="['']" *ngIf="detailsView">Volver</a>
     <a md-button [routerLink]="['/chancleta', chancletaData?.id-1]" *ngIf="!detailsView">Ver</a>
-    <button md-button>Al carrito <md-icon>add_shopping_cart</md-icon></button>
+    <button md-button (click)="agregarAlCarrito()">Al carrito <md-icon>add_shopping_cart</md-icon></button>
   </md-card-actions>
 </md-card>
